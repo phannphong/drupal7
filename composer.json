@@ -20,6 +20,7 @@
         "drupal/devel_generate": "^1.6",
         "drupal/drupal": "~7.0",
         "drupal/facetapi": "^1.5",
+        "drupal/search_api_db": "1.5",
         "drupal/views": "^3.20",
         "drush/drush": "~8.0",
         "hussainweb/drupal-composer-helper": "^1.0-beta3"
