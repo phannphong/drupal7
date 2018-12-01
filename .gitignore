@@ -8,5 +8,6 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-# Ignore vendor folder
+# Ignore the folders that composer auto generater
 vendor
+web/sites/all/modules/contrib
