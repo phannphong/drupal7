@@ -1,0 +1,68 @@
+{
+    "name": "phannphong/drupal7",
+    "description": "Drupal 7",
+    "type": "project",
+    "require": {
+        "php": ">=5.2.5",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-xml": "*",
+        "cweagans/composer-patches": "^1.6.0",
+        "drupal-composer/preserve-paths": "^0.1",
+        "drupal/apachesolr": "~1.0",
+        "drupal/apachesolr_autocomplete": "^1.6",
+        "drupal/composer_autoloader": "^1.0",
+        "drupal/devel": "^1.6",
+        "drupal/devel_generate": "^1.6",
+        "drupal/drupal": "~7.0",
+        "drupal/facetapi": "^1.5",
+        "drupal/views": "^3.20",
+        "drush/drush": "~8.0",
+        "hussainweb/drupal-composer-helper": "^1.0-beta3"
+    },
+    "authors": [
+        {
+            "name": "Phong Phan",
+            "email": "phongphandinhphong@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/7"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "drupal-composer-helper": {
+            "web-prefix": "web",
+            "set-d7-paths": true
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "web/": [
+                "type:drupal-core"
+            ]
+        },
+        "preserve-paths": [
+            "web/sites/all/libraries",
+            "web/sites/all/modules/custom",
+            "web/sites/all/modules/features",
+            "web/sites/all/themes/custom",
+            "web/sites/all/translations",
+            "web/sites/default"
+        ]
+    },
+    "prefer-stable": true,
+    "conflict": {
+        "drupal/core": "8.*"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
