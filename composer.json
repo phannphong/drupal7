@@ -13,6 +13,7 @@
         "ext-xml": "*",
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/preserve-paths": "^0.1",
+        "drupal/admin_menu": "^3.0@RC",
         "drupal/apachesolr": "~1.0",
         "drupal/apachesolr_autocomplete": "^1.6",
         "drupal/composer_autoloader": "^1.0",
