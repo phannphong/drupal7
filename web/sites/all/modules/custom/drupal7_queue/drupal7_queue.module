@@ -1,0 +1,22 @@
+<?php
+
+module_load_include('inc', 'drupal7_queue', 'drupal7_queue');
+
+/**
+ * Implements hook_cron().
+ */
+function drupal7_queue_cron() {
+  createItemQueue();
+}
+
+/**
+ * Implements hook_cron_queue_info().
+ */
+function drupal7_queue_cron_queue_info() {
+//  $queues = [];
+//  $queues['drupalTutQueue'] = [
+//    'worker callback' => 'saveRemoteData', //function to call for each item
+//    'time' => 60, //seconds to spend working on the queue
+//  ];
+//  return $queues;
+}

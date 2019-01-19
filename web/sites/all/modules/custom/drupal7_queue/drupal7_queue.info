@@ -1,0 +1,5 @@
+name = Drupal7 Queue
+description = Drupal7 Queue Example
+package = DrupalTut
+core = 7.x
+version = VERSION
