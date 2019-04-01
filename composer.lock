@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19471b24b0d246ecbf026536e2eb87c6",
+    "content-hash": "71e97100cd4837a4d145d6a62347460f",
     "packages": [
         {
             "name": "composer/installers",
@@ -867,6 +867,146 @@
             }
         },
         {
+            "name": "drupal/captcha",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/captcha",
+                "reference": "7.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/captcha-7.x-1.5.zip",
+                "reference": "7.x-1.5",
+                "shasum": "02b50301dc82e53a4a99e34bb5415d8c256a47ef"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.5",
+                    "datestamp": "1504726602",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "elachlan",
+                    "homepage": "https://www.drupal.org/user/1021502"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "soxofaan",
+                    "homepage": "https://www.drupal.org/user/41478"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "description": "Base CAPTCHA module for adding challenges to arbitrary forms.",
+            "homepage": "https://www.drupal.org/project/captcha",
+            "support": {
+                "source": "http://cgit.drupalcode.org/captcha"
+            }
+        },
+        {
+            "name": "drupal/clientside_validation",
+            "version": "1.46.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/clientside_validation",
+                "reference": "7.x-1.46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/clientside_validation-7.x-1.46.zip",
+                "reference": "7.x-1.46",
+                "shasum": "ffd09353813a86797dfecfadf6599661b64f2043"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "drupal/clientside_validation_fapi": "*",
+                "drupal/clientside_validation_field_validation": "*",
+                "drupal/clientside_validation_form": "*",
+                "drupal/clientside_validation_html5": "*",
+                "drupal/clientside_validation_test_field_validation": "*",
+                "drupal/clientside_validation_webform": "*",
+                "drupal/context": "*",
+                "drupal/defaultcontent": "*",
+                "drupal/elements": "*",
+                "drupal/fapi_validation": "*",
+                "drupal/features": "*",
+                "drupal/field_validation": "*",
+                "drupal/ife": "*",
+                "drupal/testswarm": "*",
+                "drupal/webform": "*",
+                "drupal/webform_validation": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.46",
+                    "datestamp": "1506322444",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jelle_S",
+                    "homepage": "https://www.drupal.org/user/829198"
+                },
+                {
+                    "name": "attiks",
+                    "homepage": "https://www.drupal.org/user/105002"
+                },
+                {
+                    "name": "nikunjkotecha",
+                    "homepage": "https://www.drupal.org/user/694082"
+                }
+            ],
+            "description": "Add client side validation to forms and Webforms",
+            "homepage": "https://www.drupal.org/project/clientside_validation",
+            "support": {
+                "source": "http://cgit.drupalcode.org/clientside_validation"
+            }
+        },
+        {
             "name": "drupal/composer_autoloader",
             "version": "1.3.0",
             "source": {
@@ -920,17 +1060,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "7.x-1.14"
+                "reference": "7.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.14.zip",
-                "reference": "7.x-1.14",
-                "shasum": "866b4a5eb5f6085e80aff155ec7a2cd476eea117"
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.15.zip",
+                "reference": "7.x-1.15",
+                "shasum": "d55e992f3c68dc663505b3e68a0418fee17cf960"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -947,8 +1087,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-1.14",
-                    "datestamp": "1519455784",
+                    "version": "7.x-1.15",
+                    "datestamp": "1549603684",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1394,6 +1534,145 @@
             }
         },
         {
+            "name": "drupal/jquery_update",
+            "version": "3.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/jquery_update",
+                "reference": "7.x-3.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_update-7.x-3.0-alpha5.zip",
+                "reference": "7.x-3.0-alpha5",
+                "shasum": "84594e50ab648b96260911e3d3048e951dc473d7"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.0-alpha5",
+                    "datestamp": "1490805183",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "Victor Safronov",
+                    "homepage": "https://www.drupal.org/user/632950"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "jjeff",
+                    "homepage": "https://www.drupal.org/user/17190"
+                },
+                {
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
+                },
+                {
+                    "name": "mfer",
+                    "homepage": "https://www.drupal.org/user/25701"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "description": "Update jQuery and jQuery UI to a more recent version.",
+            "homepage": "https://www.drupal.org/project/jquery_update",
+            "support": {
+                "source": "http://cgit.drupalcode.org/jquery_update"
+            }
+        },
+        {
+            "name": "drupal/recaptcha",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/recaptcha",
+                "reference": "7.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/recaptcha-7.x-2.3.zip",
+                "reference": "7.x-2.3",
+                "shasum": "e06dbbb0318a7e5dc5020e201756d7dbb0a0b690"
+            },
+            "require": {
+                "drupal/captcha": "*",
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.3",
+                    "datestamp": "1548967980",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "diolan",
+                    "homepage": "https://www.drupal.org/user/2336786"
+                },
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
+                },
+                {
+                    "name": "id.medion",
+                    "homepage": "https://www.drupal.org/user/2542592"
+                }
+            ],
+            "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+            "homepage": "https://www.drupal.org/project/recaptcha",
+            "support": {
+                "source": "http://cgit.drupalcode.org/recaptcha"
+            }
+        },
+        {
             "name": "drupal/search_api",
             "version": "1.25.0",
             "source": {
@@ -1498,6 +1777,73 @@
             }
         },
         {
+            "name": "drupal/token",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/token",
+                "reference": "7.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-7.x-1.6.zip",
+                "reference": "7.x-1.6",
+                "shasum": "8b45fe9e57a09629559776175ae2ce0840aeec97"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.6",
+                    "datestamp": "1485316084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "support": {
+                "source": "http://cgit.drupalcode.org/token"
+            }
+        },
+        {
             "name": "drupal/views",
             "version": "3.20.0",
             "source": {
@@ -1583,6 +1929,208 @@
             "homepage": "https://www.drupal.org/project/views",
             "support": {
                 "source": "http://cgit.drupalcode.org/views"
+            }
+        },
+        {
+            "name": "drupal/webform",
+            "version": "4.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform",
+                "reference": "7.x-4.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-7.x-4.10.zip",
+                "reference": "7.x-4.10",
+                "shasum": "2198896bbf59b6150afe678f682fc49d3f0a80d3"
+            },
+            "require": {
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "require-dev": {
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.10",
+                    "datestamp": "1442953139",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of forms and questionnaires.",
+            "homepage": "https://www.drupal.org/project/webform",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_ajax",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_ajax",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_ajax-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "c8e87cce51f78eeecfa18e8633b53a537e634b7b"
+            },
+            "require": {
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1361543750",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Stosik",
+                    "homepage": "https://www.drupal.org/user/49385"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Adds AJAX support to Webforms",
+            "homepage": "https://www.drupal.org/project/webform_ajax",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_ajax"
+            }
+        },
+        {
+            "name": "drupal/webform_validation",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_validation",
+                "reference": "7.x-1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_validation-7.x-1.15.zip",
+                "reference": "7.x-1.15",
+                "shasum": "bc9a5c4b3a2a6b8090ab398d93985dea51cf97a9"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/webform": "*"
+            },
+            "require-dev": {
+                "drupal/features": "*",
+                "drupal/uuid_features": "*",
+                "drupal/webform_validation_testing": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.15",
+                    "datestamp": "1538404084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
+                }
+            ],
+            "description": "Add validation rules to Webforms.",
+            "homepage": "https://www.drupal.org/project/webform_validation",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_validation"
             }
         },
         {

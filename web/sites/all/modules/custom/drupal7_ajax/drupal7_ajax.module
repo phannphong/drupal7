@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * implements hook_menu
+ */
+function drupal7_ajax_menu() {
+  $webform_id = '19381';
+
+  $items['node/get/ajax/' . $webform_id] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_drupal7_ajax_form_render',
+    'delivery callback' => '_drupal7_ajax_load_delivery',
+    'access arguments' => array('access content')
+  );
+
+  return $items;
+}
+
+function _drupal7_ajax_form_render() {
+  $webform_id = '19381';
+  $webform = node_load($webform_id);
+
+  if ($webform) {
+    $views = entity_view('node', array($webform));
+    return '<a href="#" title="Close" id="bottomNavClose"></a>'
+        . '<div class="formulaire-simulation">' . render($views['node'][$webform_id]) . '</div>';
+  }
+}
+
+function drupal7_ajax_form_alter(&$form, &$form_state, $form_id) {
+  $form['#after_build'][] = '_drupal7_ajax_recaptcha_form_after_build';
+  if ($form_id === 'webform_client_form_19381') {
+    $form['#validate'][] = '_drupal7_ajax_validate';
+    $form['#submit'][] = '_drupal7_ajax_submit';
+  }
+}
+
+function _drupal7_ajax_recaptcha_form_after_build($form, &$form_state) {
+  if (isset($form['captcha'], $form['captcha']['#type'], $form['captcha']['#captcha_type']) &&
+  $form['captcha']['#type'] == 'captcha' && $form['captcha']['#captcha_type'] == 'recaptcha/reCAPTCHA') {
+    $form_captcha = &$form['captcha'];
+    
+    $head_elements = drupal_add_html_head();
+    drupal_alter('html_head', $head_elements);
+    
+    $form_captcha['captcha_widgets']['recaptcha_widget']['#markup'] .= drupal_render($head_elements['recaptcha_api']);
+  }
+
+  return $form;
+}
+
+function _drupal7_ajax_load_delivery($page_callback_result) {
+  if (!is_int($page_callback_result)) {
+    print render($page_callback_result);
+  }
+}
+
+function _drupal7_ajax_validate($form, &$form_state) {
+  if (!preg_match('{^\d+$}', $form_state['values']['submitted']['phone'])) {
+    form_set_error('submitted[phone]', t('The telephone number should only contain numbers. Please correct.'));
+  }
+
+  // drupal_goto('/node/19382', array(
+  //   'query' => array(
+  //     'first_name' => $form_state['values']['submitted']['first_name'],
+  //     'email' => $form_state['values']['submitted']['email'],
+  //     'phone' => $form_state['values']['submitted']['phone'],
+  //   )
+  // ));
+
+  // $form_errors = form_get_errors();
+  // if (isset($form_errors['captcha_response']) && isset($_SESSION['messages']['error'])) {
+  //   foreach ($_SESSION['messages']['error'] as $i => $error_message) {
+  //     if ($error_message == $form_errors['captcha_response']) {
+  //       $_SESSION['messages']['error'][$i] = t('The answer you entered for the CAPTCHA was not correct.');
+  //     }
+  //   }
+  // }
+}

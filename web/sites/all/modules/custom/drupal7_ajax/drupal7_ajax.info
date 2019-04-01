@@ -1,0 +1,5 @@
+name = Drupal7 Ajax
+description = Drupal7 Ajax Example
+package = DrupalTut
+core = 7.x
+version = VERSION

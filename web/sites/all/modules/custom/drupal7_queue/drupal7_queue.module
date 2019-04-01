@@ -9,14 +9,21 @@ function drupal7_queue_cron() {
   createItemQueue();
 }
 
+function drupal7_queue_preprocess_page(&$variables) {
+  // if (!empty($variables['node']) && $variables['node']->type === 'page') {
+  //   saveRemoteData();
+  // }
+}
+
 /**
  * Implements hook_cron_queue_info().
  */
 function drupal7_queue_cron_queue_info() {
-//  $queues = [];
-//  $queues['drupalTutQueue'] = [
-//    'worker callback' => 'saveRemoteData', //function to call for each item
-//    'time' => 60, //seconds to spend working on the queue
-//  ];
-//  return $queues;
+  watchdog('notice', 'hook_cron_queue_info run');
+ $queues = [];
+ $queues['drupalTutQueue'] = [
+   'worker callback' => 'saveRemoteItem', //function to call for each item
+   'time' => 15, //seconds to spend working on the queue
+ ];
+ return $queues;
 }
