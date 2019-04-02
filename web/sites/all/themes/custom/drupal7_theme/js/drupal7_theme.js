@@ -14,13 +14,17 @@
             $('#phannphong').load('/node/get/ajax/19381');
             e.preventDefault();
         });
+
+        $('form input.webform-submit').once().click(function() {
+          console.log('test');
+          $('#phannphong').append('test_');
+        });
       }
   
     };
   
     $(document).ready(function(context) {
       $('body').on('submit', function(e) {
-        
         $('form').find('.messages.error').remove();
         var $recaptchaResponse = $('body').find('#g-recaptcha-response');
 

@@ -18,8 +18,6 @@
         "drupal/apachesolr_autocomplete": "^1.6",
         "drupal/clientside_validation": "^1.46",
         "drupal/composer_autoloader": "^1.0",
-        "drupal/devel": "^1.6",
-        "drupal/devel_generate": "^1.6",
         "drupal/drupal": "~7.0",
         "drupal/facetapi": "^1.5",
         "drupal/jquery_update": "3.0-alpha5",
@@ -73,5 +71,9 @@
     "config": {
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "require-dev": {
+        "drupal/devel": "^1.7",
+        "drupal/devel_generate": "^1.7"
     }
 }
