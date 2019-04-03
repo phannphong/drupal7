@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e237902b89ee606c34b1875ec77ef0f",
+    "content-hash": "b9213b2b566e8a7bc066916e63658c63",
     "packages": [
         {
             "name": "composer/installers",
@@ -831,6 +831,163 @@
             }
         },
         {
+            "name": "drupal/apachesolr_confgen",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/apachesolr_confgen.git",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/apachesolr_confgen-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "4d47cab03e07e563f31c25aff35bb2dafaf820cd"
+            },
+            "require": {
+                "drupal/apachesolr": "*",
+                "drupal/apachesolr_search": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/querypath": "*",
+                "drupal/variable_realm": "*"
+            },
+            "require-dev": {
+                "drupal/variable": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1414060128",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Generator for Apache Solr Configuration Files",
+            "homepage": "https://www.drupal.org/project/apachesolr_confgen",
+            "support": {
+                "source": "https://git.drupalcode.org/project/apachesolr_confgen"
+            }
+        },
+        {
+            "name": "drupal/apachesolr_multilingual",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/apachesolr_multilingual.git",
+                "reference": "7.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/apachesolr_multilingual-7.x-1.3.zip",
+                "reference": "7.x-1.3",
+                "shasum": "79fbcfd26b9cd83fd51d7ef3145db9fa86cfc442"
+            },
+            "require": {
+                "drupal/apachesolr_search": "^1.5",
+                "drupal/drupal": "*"
+            },
+            "require-dev": {
+                "drupal/apachesolr_confgen": "*",
+                "drupal/i18n_variable": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.3",
+                    "datestamp": "1441012440",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Multilingual and non-English search with Solr. This module extends Apache Solr search.",
+            "homepage": "https://www.drupal.org/project/apachesolr_multilingual",
+            "support": {
+                "source": "https://git.drupalcode.org/project/apachesolr_multilingual"
+            }
+        },
+        {
+            "name": "drupal/apachesolr_multilingual_confgen",
+            "version": "1.3.0",
+            "require": {
+                "drupal/apachesolr_confgen": "*",
+                "drupal/apachesolr_multilingual": "self.version",
+                "drupal/drupal": "~7.0",
+                "drupal/i18n_variable": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.3",
+                    "datestamp": "1441012440",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Apache Solr Config Generator Add-On for Multilingual and non-English search with Solr",
+            "homepage": "https://www.drupal.org/project/apachesolr_multilingual",
+            "support": {
+                "source": "https://git.drupalcode.org/project/apachesolr_multilingual"
+            }
+        },
+        {
             "name": "drupal/apachesolr_search",
             "version": "1.11.0",
             "require": {
@@ -909,6 +1066,115 @@
             "homepage": "https://www.drupal.org/project/apachesolr",
             "support": {
                 "source": "http://cgit.drupalcode.org/apachesolr"
+            }
+        },
+        {
+            "name": "drupal/apachesolr_sort",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/apachesolr_sort.git",
+                "reference": "7.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/apachesolr_sort-7.x-1.0.zip",
+                "reference": "7.x-1.0",
+                "shasum": "5d104fafc06571e96cf1660e326f21ad4dc8efbf"
+            },
+            "require": {
+                "drupal/apachesolr": "*",
+                "drupal/apachesolr_search": "*",
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0",
+                    "datestamp": "1375908668",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nick_vh",
+                    "homepage": "https://www.drupal.org/user/122682"
+                },
+                {
+                    "name": "dbolser",
+                    "homepage": "https://www.drupal.org/user/2214894"
+                },
+                {
+                    "name": "wouters_f",
+                    "homepage": "https://www.drupal.org/user/721548"
+                }
+            ],
+            "description": "Manage your Apachesolr sorts through an UI",
+            "homepage": "https://www.drupal.org/project/apachesolr_sort",
+            "support": {
+                "source": "https://git.drupalcode.org/project/apachesolr_sort"
+            }
+        },
+        {
+            "name": "drupal/apachesolr_stats",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/apachesolr_stats.git",
+                "reference": "7.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/apachesolr_stats-7.x-1.0-beta1.zip",
+                "reference": "7.x-1.0-beta1",
+                "shasum": "fb05d4ab6e934351bbe8f5eab57d26baf2eb77d3"
+            },
+            "require": {
+                "drupal/apachesolr": "*",
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-beta1",
+                    "datestamp": "1402511328",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cpliakas",
+                    "homepage": "https://www.drupal.org/user/266779"
+                },
+                {
+                    "name": "janusman",
+                    "homepage": "https://www.drupal.org/user/153120"
+                }
+            ],
+            "description": "Keeps and reports statistics about Apache Solr usage and performance.",
+            "homepage": "https://www.drupal.org/project/apachesolr_stats",
+            "support": {
+                "source": "https://git.drupalcode.org/project/apachesolr_stats"
             }
         },
         {
@@ -1447,6 +1713,279 @@
             }
         },
         {
+            "name": "drupal/i18n",
+            "version": "1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/i18n.git",
+                "reference": "7.x-1.26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/i18n-7.x-1.26.zip",
+                "reference": "7.x-1.26",
+                "shasum": "c0fa51c9163ef4332e45d29e6ee68ea0254119f7"
+            },
+            "require": {
+                "drupal/drupal": "*",
+                "drupal/variable": "*"
+            },
+            "require-dev": {
+                "drupal/contact-contact": "*",
+                "drupal/i18n_node": "*",
+                "drupal/i18n_string": "*",
+                "drupal/i18n_taxonomy": "*",
+                "drupal/i18n_translation": "*",
+                "drupal/i18n_variable": "*",
+                "drupal/variable_realm": "~2.0",
+                "drupal/variable_store": "~2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.26",
+                    "datestamp": "1534531980",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "Jax",
+                    "homepage": "https://www.drupal.org/user/11450"
+                },
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "alex_b",
+                    "homepage": "https://www.drupal.org/user/53995"
+                },
+                {
+                    "name": "brucepearson",
+                    "homepage": "https://www.drupal.org/user/415674"
+                },
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
+                {
+                    "name": "das-peter",
+                    "homepage": "https://www.drupal.org/user/762870"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "drewish",
+                    "homepage": "https://www.drupal.org/user/34869"
+                },
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                },
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                },
+                {
+                    "name": "neochief",
+                    "homepage": "https://www.drupal.org/user/233667"
+                },
+                {
+                    "name": "plach",
+                    "homepage": "https://www.drupal.org/user/183211"
+                },
+                {
+                    "name": "scor",
+                    "homepage": "https://www.drupal.org/user/52142"
+                },
+                {
+                    "name": "stella",
+                    "homepage": "https://www.drupal.org/user/66894"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                },
+                {
+                    "name": "yhahn",
+                    "homepage": "https://www.drupal.org/user/264833"
+                }
+            ],
+            "description": "Extends Drupal support for multilingual features.",
+            "homepage": "https://www.drupal.org/project/i18n",
+            "support": {
+                "source": "https://git.drupalcode.org/project/i18n"
+            }
+        },
+        {
+            "name": "drupal/i18n_variable",
+            "version": "1.26.0",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/i18n": "self.version",
+                "drupal/variable_realm": "~2.0",
+                "drupal/variable_store": "~2.0"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.26",
+                    "datestamp": "1534531980",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "Jax",
+                    "homepage": "https://www.drupal.org/user/11450"
+                },
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "alex_b",
+                    "homepage": "https://www.drupal.org/user/53995"
+                },
+                {
+                    "name": "brucepearson",
+                    "homepage": "https://www.drupal.org/user/415674"
+                },
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
+                {
+                    "name": "das-peter",
+                    "homepage": "https://www.drupal.org/user/762870"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "drewish",
+                    "homepage": "https://www.drupal.org/user/34869"
+                },
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                },
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                },
+                {
+                    "name": "neochief",
+                    "homepage": "https://www.drupal.org/user/233667"
+                },
+                {
+                    "name": "plach",
+                    "homepage": "https://www.drupal.org/user/183211"
+                },
+                {
+                    "name": "scor",
+                    "homepage": "https://www.drupal.org/user/52142"
+                },
+                {
+                    "name": "stella",
+                    "homepage": "https://www.drupal.org/user/66894"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                },
+                {
+                    "name": "yhahn",
+                    "homepage": "https://www.drupal.org/user/264833"
+                }
+            ],
+            "description": "Multilingual variables that switch language depending on page language.",
+            "homepage": "https://www.drupal.org/project/i18n",
+            "support": {
+                "source": "https://git.drupalcode.org/project/i18n"
+            }
+        },
+        {
             "name": "drupal/jquery_update",
             "version": "3.0.0-alpha5",
             "source": {
@@ -1519,6 +2058,132 @@
             "homepage": "https://www.drupal.org/project/jquery_update",
             "support": {
                 "source": "http://cgit.drupalcode.org/jquery_update"
+            }
+        },
+        {
+            "name": "drupal/module_filter",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/module_filter.git",
+                "reference": "7.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/module_filter-7.x-2.2.zip",
+                "reference": "7.x-2.2",
+                "shasum": "a7e7aa799498cf6f9500237998a545668dd575d9"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.2",
+                    "datestamp": "1553708435",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "greenSkin",
+                    "homepage": "https://www.drupal.org/user/173855"
+                },
+                {
+                    "name": "realityloop",
+                    "homepage": "https://www.drupal.org/user/139189"
+                },
+                {
+                    "name": "shumushin",
+                    "homepage": "https://www.drupal.org/user/22093"
+                }
+            ],
+            "description": "Filter the modules list.",
+            "homepage": "https://www.drupal.org/project/module_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/module_filter"
+            }
+        },
+        {
+            "name": "drupal/querypath",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/querypath.git",
+                "reference": "7.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/querypath-7.x-2.1.zip",
+                "reference": "7.x-2.1",
+                "shasum": "479b97e3a2029975f80f3998680f8c7f5ab0f318"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.1",
+                    "datestamp": "1347302686",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "arpieb",
+                    "homepage": "https://www.drupal.org/user/533416"
+                },
+                {
+                    "name": "eabrand",
+                    "homepage": "https://www.drupal.org/user/511374"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mbutcher",
+                    "homepage": "https://www.drupal.org/user/201798"
+                },
+                {
+                    "name": "mfer",
+                    "homepage": "https://www.drupal.org/user/25701"
+                },
+                {
+                    "name": "pebosi",
+                    "homepage": "https://www.drupal.org/user/55050"
+                }
+            ],
+            "description": "QueryPath is a developer tool for working with HTML and XML.",
+            "homepage": "https://www.drupal.org/project/querypath",
+            "support": {
+                "source": "https://git.drupalcode.org/project/querypath"
             }
         },
         {
@@ -1758,6 +2423,246 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
+            }
+        },
+        {
+            "name": "drupal/transliteration",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/transliteration.git",
+                "reference": "7.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/transliteration-7.x-3.2.zip",
+                "reference": "7.x-3.2",
+                "shasum": "a97a8d531a222762a1d04d7243d5041319200f7d"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.2",
+                    "datestamp": "1395079431",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "smk-ka",
+                    "homepage": "https://www.drupal.org/user/48898"
+                }
+            ],
+            "description": "Converts non-latin text to US-ASCII and sanitizes file names.",
+            "homepage": "https://www.drupal.org/project/transliteration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/transliteration"
+            }
+        },
+        {
+            "name": "drupal/variable",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/variable.git",
+                "reference": "7.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/variable-7.x-2.5.zip",
+                "reference": "7.x-2.5",
+                "shasum": "32429df0905324be1456d80ba89efa1fd5556c3a"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "drupal/variable_store": "*",
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.5",
+                    "datestamp": "1398250127",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "xtfer",
+                    "homepage": "https://www.drupal.org/user/31698"
+                }
+            ],
+            "description": "Variable Information and basic variable API",
+            "homepage": "https://www.drupal.org/project/variable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/variable"
+            }
+        },
+        {
+            "name": "drupal/variable_realm",
+            "version": "2.5.0",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/variable": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.5",
+                    "datestamp": "1398250127",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "xtfer",
+                    "homepage": "https://www.drupal.org/user/31698"
+                }
+            ],
+            "description": "API to use variable realms from different modules",
+            "homepage": "https://www.drupal.org/project/variable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/variable"
+            }
+        },
+        {
+            "name": "drupal/variable_store",
+            "version": "2.5.0",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/variable": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.5",
+                    "datestamp": "1398250127",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jose Reyero",
+                    "homepage": "https://www.drupal.org/user/4299"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "xtfer",
+                    "homepage": "https://www.drupal.org/user/31698"
+                }
+            ],
+            "description": "Database storage for variable realms. This is an API module.",
+            "homepage": "https://www.drupal.org/project/variable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/variable"
             }
         },
         {
@@ -3347,7 +4252,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/admin_menu": 5
+        "drupal/admin_menu": 5,
+        "drupal/apachesolr_stats": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
