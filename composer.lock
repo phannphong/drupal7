@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35322e08b3fe96530337aedd0883c26e",
+    "content-hash": "388d8929fc8e69a8fe995882a5fe5fa3",
     "packages": [
         {
             "name": "composer/installers",
@@ -2509,6 +2509,68 @@
             }
         },
         {
+            "name": "drupal/search_api_elasticsearch",
+            "version": "1.0.0-alpha8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_elasticsearch.git",
+                "reference": "7.x-1.0-alpha8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_elasticsearch-7.x-1.0-alpha8.zip",
+                "reference": "7.x-1.0-alpha8",
+                "shasum": "391998be5c5b1532f80df8ac5745d392f9325ff3"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/search_api": "*"
+            },
+            "require-dev": {
+                "drupal/coder": ">7",
+                "drush/drush": "6.*",
+                "phpmd/phpmd": "*",
+                "phpunit/phpunit": "4.3.1",
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "*",
+                "squizlabs/php_codesniffer": ">=1.4.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-alpha8",
+                    "datestamp": "1438630739",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Altenhofel",
+                    "homepage": "http://www.vmdoh.com",
+                    "email": "brian.altenhofel@vmdoh.com"
+                },
+                {
+                    "name": "orakili",
+                    "homepage": "https://www.drupal.org/user/1287634"
+                }
+            ],
+            "description": "Provides an Elasticsearch backend for the Search API module.",
+            "homepage": "https://www.drupal.org/project/search_api_elasticsearch",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api_elasticsearch"
+            }
+        },
+        {
             "name": "drupal/search_api_grouping",
             "version": "2.0.0-rc2",
             "source": {
@@ -4678,6 +4740,7 @@
         "drupal/admin_menu": 5,
         "drupal/apachesolr_stats": 10,
         "drupal/examples": 20,
+        "drupal/search_api_elasticsearch": 15,
         "drupal/search_api_grouping": 5
     },
     "prefer-stable": true,

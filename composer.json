@@ -29,6 +29,7 @@
         "drupal/recaptcha": "^2.3",
         "drupal/search_api_autocomplete": "^1.6",
         "drupal/search_api_db": "1.5",
+        "drupal/search_api_elasticsearch": "^1.0@alpha",
         "drupal/search_api_grouping": "^2.0@RC",
         "drupal/search_api_multi": "^1.5",
         "drupal/search_api_page": "^1.5",
