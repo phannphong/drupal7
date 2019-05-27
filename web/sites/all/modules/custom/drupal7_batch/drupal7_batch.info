@@ -1,0 +1,5 @@
+name = Drupal7 Batch
+description = Drupal7 Batch Example
+package = DrupalTut
+core = 7.x
+version = VERSION
